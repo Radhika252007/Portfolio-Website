@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(134, 51, 181);
+
+        }
+        .upper-text{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            margin: 30px 0;
+            color: #7f86aa;
+        }
+        .blue{
+            color: rgb(52, 52, 104);
+        }
+        .image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50rem;
+            margin: 50px;
+            border: 4px solid rgb(152, 152, 199);
+
+        }        .image{
+            display:flex;
+            justify-content: center;
+            margin-top: 10px;
+            
+        }
+        .current-work{
+            text-align: center;
+            font-size: 24px;
+            font-weight: 300;
+            margin: auto;
+        }
+        .description{
+            margin: 30px 40px;
+            text-align: center;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+        }
+        .button .btn{
+            width: 90px;
+            height: 40px;
+            border-radius: 6px;
+            background-color: rgb(104, 72, 166);
+            color: white;
+            border: 2px solid rgb(198, 177, 217);
+            animation: button 2s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        .button .btn:hover{
+            background-color: rgb(163, 110, 213);
+            font-size: 1.9vh;
+        }
+        @keyframes button {
+    0% {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateX(5px);
+    }
+    75% {
+        opacity: 0.9;
+        transform: translateX(-2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Radhika's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="upper-text">About <span class="blue">Me</span></div>
+        <div class="image">
+            <img src="images/doodle-girl-character-drawing-cute-vector.jpg" alt="">
+        </div>
+        <div class="current-work">
+            Frontend Developer!
+        </div>
+        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam impedit quis dolorum excepturi itaque placeat alias eos fuga tempore illo harum, error ratione omnis aut. Dolor ratione iste consectetur mollitia, ducimus tenetur voluptatibus ea dignissimos quod sed quos id voluptate in veritatis ipsam? Inventore molestiae quaerat suscipit aliquid voluptates dolor aperiam, sint voluptas laudantium, facere magnam rerum! Perspiciatis repellendus, officia id vitae ducimus illo corporis?</div>
+        <div class="button">
+            <button class="btn">Read More</button>
+        </div>
+    </main>
+</body>
+
+</html>

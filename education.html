@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(134, 51, 181);
+
+        }
+
+        .text-journey {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 34px;
+            font-weight: 800;
+            animation: heading 2.5s ease-out;
+        }
+
+        .blue {
+            color: rgb(52, 52, 104);
+        }
+
+        .FirstSection {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .left {
+            width: 30%;
+        }
+
+        .box {
+            height: 105vh;
+            width: 2px;
+            background-color: #263d87;
+            margin: 40px 0;
+        }
+
+        .education-content {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50rem;
+            background-color: #263d87;
+            position: relative;
+            left: -15px;
+            margin-bottom: 160px;
+
+        }
+
+        .ed-info {
+            width: 500px;
+            border: 2px solid #263d87;
+            height: 170px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            transition: all 1s ease-in-out;
+        }
+
+        .ed-info:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px rgb(18, 18, 62);
+        }
+
+        .education {
+            margin: 63px 50px;
+        }
+
+        .ed-place {
+            margin: 10px 5px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .ed-content {
+            margin: 5px;
+        }
+
+        .year {
+            margin: 6px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #263d87;
+        }
+
+        .leftside{
+            opacity: 0;
+            animation: fadeInLeft 1s ease-in-out forwards;
+        }
+
+        .rightside{
+            opacity: 0;
+            visibility: hidden;
+            animation: fadeInRight 1s ease-in-out forwards;
+            animation-delay: 0.4s;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+                visibility: hidden;
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+                visibility: visible;
+            }
+        }
+
+        @keyframes heading {
+            0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(-20px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.05) translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+        }
+
+        .year::before {
+            content: "•";
+            color: #263d87;
+            font-size: 20px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Radhika's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="text-journey">
+            My <span class="blue">Journey</span>
+        </div>
+        <section class="FirstSection">
+            <div class="leftside">
+                <h3 class="heading">Education</h3>
+                <div class="education-content">
+                    <div class="box">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="education">
+                        <div class="ed-info">
+                            <div class="year">
+                                2023-2025
+                            </div>
+                            <div class="ed-place">University of California</div>
+                            <div class="ed-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Dignissimos
+                                sapiente, quos possimus exercitationem autem dolorem voluptates aut sunt maiores tempora
+                                quam excepturi dolores totam, modi repudiandae cumque. Officiis, doloribus, consequuntur
+                                unde quam ducimus debitis vero laudantium expedita dolor qui repellat.
+                            </div>
+                        </div>
+                        <div class="ed-info">
+                            <div class="year">
+                                2023-2025
+                            </div>
+                            <div class="ed-place">University of California</div>
+                            <div class="ed-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Dignissimos
+                                sapiente, quos possimus exercitationem autem dolorem voluptates aut sunt maiores tempora
+                                quam excepturi dolores totam, modi repudiandae cumque. Officiis, doloribus, consequuntur
+                                unde quam ducimus debitis vero laudantium expedita dolor qui repellat.
+                            </div>
+                        </div>
+                        <div class="ed-info">
+                            <div class="year">
+                                2023-2025
+                            </div>
+                            <div class="ed-place">University of California</div>
+                            <div class="ed-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Dignissimos
+                                sapiente, quos possimus exercitationem autem dolorem voluptates aut sunt maiores tempora
+                                quam excepturi dolores totam, modi repudiandae cumque. Officiis, doloribus, consequuntur
+                                unde quam ducimus debitis vero laudantium expedita dolor qui repellat.
+                            </div>
+                        </div>
+                        <div class="ed-info">
+                            <div class="year">
+                                2023-2025
+                            </div>
+                            <div class="ed-place">University of California</div>
+                            <div class="ed-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Dignissimos
+                                sapiente, quos possimus exercitationem autem dolorem voluptates aut sunt maiores tempora
+                                quam excepturi dolores totam, modi repudiandae cumque. Officiis, doloribus, consequuntur
+                                unde quam ducimus debitis vero laudantium expedita dolor qui repellat.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightside">
+                <h3>Experience</h3>
+                <div class="education-content">
+                    <div class="box">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="education">
+                        <div class="ed-info">
+                            <div class="year">
+                                2023-2025
+                            </div>
+                            <div class="ed-place">University of California</div>
+                            <div class="ed-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Dignissimos
+                                sapiente, quos possimus exercitationem autem dolorem voluptates aut sunt maiores tempora
+                                quam excepturi dolores totam, modi repudiandae cumque. Officiis, doloribus, consequuntur
+                                unde quam ducimus debitis vero laudantium expedita dolor qui repellat.
+                            </div>
+                        </div>
+                        <div class="ed-info">
+                            <div class="year">
+                                2023-2025
+                            </div>
+                            <div class="ed-place">University of California</div>
+                            <div class="ed-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Dignissimos
+                                sapiente, quos possimus exercitationem autem dolorem voluptates aut sunt maiores tempora
+                                quam excepturi dolores totam, modi repudiandae cumque. Officiis, doloribus, consequuntur
+                                unde quam ducimus debitis vero laudantium expedita dolor qui repellat.
+                            </div>
+                        </div>
+                        <div class="ed-info">
+                            <div class="year">
+                                2023-2025
+                            </div>
+                            <div class="ed-place">University of California</div>
+                            <div class="ed-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Dignissimos
+                                sapiente, quos possimus exercitationem autem dolorem voluptates aut sunt maiores tempora
+                                quam excepturi dolores totam, modi repudiandae cumque. Officiis, doloribus, consequuntur
+                                unde quam ducimus debitis vero laudantium expedita dolor qui repellat.
+                            </div>
+                        </div>
+                        <div class="ed-info">
+                            <div class="year">
+                                2023-2025
+                            </div>
+                            <div class="ed-place">University of California</div>
+                            <div class="ed-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Dignissimos
+                                sapiente, quos possimus exercitationem autem dolorem voluptates aut sunt maiores tempora
+                                quam excepturi dolores totam, modi repudiandae cumque. Officiis, doloribus, consequuntur
+                                unde quam ducimus debitis vero laudantium expedita dolor qui repellat.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
